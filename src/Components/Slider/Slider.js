@@ -52,7 +52,7 @@ export default class Slider extends Component {
   render() {
     const { slides } = this.state;
     return (
-      <Carousel defaultWait={10000} swipe={true} forever>
+      <Carousel defaultWait={10000} swipe={true} forever maxTurns={0}>
         {slides.map((item, index) => (
           <Slide key={index} right>
             <div className="slide-container">
