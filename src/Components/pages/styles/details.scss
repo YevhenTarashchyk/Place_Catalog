@@ -1,0 +1,93 @@
+@import "../../../_vars";
+.social__icons {
+  padding: 5% 0;
+  .icons__icon {
+    position: relative;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid $mainDark;
+    float: right;
+    transition: all 0.3s ease;
+    .fab {
+      color: $mainDark;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      border: 5px solid #9c30db;
+      box-shadow: 0 0 8px #9c30db;
+
+      .fab {
+        color: #9c30db;
+        text-shadow: 0 0 3px #9c30db;
+      }
+    }
+  }
+}
+
+.details_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(
+    to bottom,
+    rgba(200, 146, 217, 1) 0%,
+    rgba(252, 252, 252, 1) 59%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  height: 100vh;
+  text-transform: uppercase;
+  color: $textOnDark;
+  text-align: center;
+  h1 {
+    padding-top: 5%;
+    color: $mainDark;
+  }
+  h3 {
+    margin-top: 3%;
+    color: $mainDark;
+  }
+  p {
+    padding: 0 10% 0 10%;
+    color: $mainDark;
+  }
+}
+
+.details_img {
+  width: 100%;
+  height: 30rem;
+  border-radius: calc(0.5rem - 1px);
+}
+
+@media (max-width: 768px) {
+  .details_header {
+    height: fit-content;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .details_header h1 {
+    font-size: 4rem;
+  }
+  .details_header h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .details_header h1 {
+    font-size: 2.5rem;
+  }
+  .details_header h3 {
+    font-size: 1.5rem;
+  }
+  .nav-link {
+    padding: 0.3rem 0.5rem;
+    font-size: 13px;
+  }
+}

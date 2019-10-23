@@ -1,0 +1,19 @@
+@import "../../vars";
+
+.main-footer {
+  background: $mainDark;
+  padding-top: 3rem;
+  color: $textOnDark;
+  .copyright {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .main-footer {
+    .row {
+      text-align: center;
+    }
+  }
+}
